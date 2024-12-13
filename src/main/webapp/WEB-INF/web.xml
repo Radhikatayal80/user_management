@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         id="WebApp_ID" version="6.0">
+
+  <!-- Application name -->
+  <display-name>UserManagement</display-name>
+
+  <!-- Welcome files -->
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>register.jsp</welcome-file>
+    <welcome-file>welcome.jsp</welcome-file>
+    <welcome-file>profile.jsp</welcome-file>
+  </welcome-file-list>
+
+
+  <!-- ProfileServlet Configuration -->
+  <servlet>
+    <servlet-name>ProfileServlet</servlet-name>
+    <servlet-class>com.usermanagement.util.ProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProfileServlet</servlet-name>
+    <url-pattern>/ProfileServlet</url-pattern> <!-- Update URL pattern -->
+  </servlet-mapping>
+  
+  
+
+</web-app>
